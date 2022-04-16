@@ -1,4 +1,5 @@
 import React from "react";
+import User from "../components/user";
 
 export default function users({ users }) {
   return (
@@ -7,8 +8,7 @@ export default function users({ users }) {
       {users.map((user) => {
         return (
           <div key={user.id}>
-            <p>{user.name}</p>
-            <p>{user.email}</p>
+          <User user={user}/>
           </div>
         );
       })}
