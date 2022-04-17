@@ -32,3 +32,11 @@ export async function getStaticProps() {
 
 //when we return data from getStaticProps it gets automatically passed to component above
 //which we can used using props
+
+//getStaticProps is runs only on server
+// the function will never run on client-side
+// the code we write inside getstaticprops wont even be incuded in js bundle which is sent to client-side
+
+// there fore we can write server side code in getstaticprops e.g code we write in NODEJS like file system calls, OS calls etc.
+
+//getstaticprops can be written in only pages folder not in component or any other folder
